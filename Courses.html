@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <video class="myVideo" src="./baruch3.mp4" autoplay muted loop></video>
+
+    <style>
+        .myVideo {
+            position: fixed;
+            object-fit: cover;
+            z-index: -1;
+            width: 100%;
+            max-height: 100%;
+        }
+
+        .gif {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .content-table {
+            font-weight: bold;
+            box-shadow: 0 0 20px white;
+        }
+
+        .content-table tbody tr:nth-of-type(even) {
+            background-color: rgb(207, 207, 207);
+        }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 3px solid rgb(0, 255, 221);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div style="display:flex; position: cover; height: 90vh;"> 
+    
+    <!-- Dropdown -->
+        
+        <div style="margin: 10px; margin-top: 30px; margin-left:35px; text-align: center; max-height: 500px; box-shadow: 0 0 40px white;">
+        <form method="post" action="X">
+            <label for="" First Name:></label>
+            <input style="display: block; width: 96%; margin-top: 55px; padding: 5px; border: none; border-radius: 10px; background-color: rgb(0, 89, 255); font-size: 12px; color: rgb(255, 255, 255); text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;" type="text" name="firstName" value="" placeholder="Enter First Name"><br><br>
+
+            <label for="" Last Name: ></label>
+            <input style="display: block; width: 96%; margin-top: 2px; padding: 5px; border: none; border-radius: 10px; background-color: rgb(0, 89, 255); font-size: 12px; color: rgb(255, 255, 255); text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;"type="text" name="lastName" value="" placeholder="Enter Last Name"><br><br>
+
+            <label for="" Email:></label>
+            <input style="display: block; width: 96%; margin-top: 2px; padding: 5px; border: none; border-radius: 10px; background-color: rgb(0, 89, 255); font-size: 12px; color: rgb(255, 255, 255); text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;"type="text" name="Email" value="" placeholder="Enter Email">
+            
+            <br><br>
+
+        <label for=""style="font-size:16px; color: white; text-aling: center;"> Select Course</label>    
+            <select name="course" style="display: block; width: 100%; margin-top: 5px; padding: 5px; border: none; border-radius: 10px; background-color: rgb(87, 130, 209); font-size: 12px; color: white; text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;">
+                <option style="text-align: center;" value="">Select</option>
+                <option value="Calculus" style="display: block; width: 100%; margin-top: 5px; padding: 12px; border: none; border-radius: 10px; background-color: rgb(68, 68, 68); font-size: 12px; color: white; text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;">Calculus</option>
+                <option value="Economics" style="display: block; width: 100%; margin-top: 5px; padding: 12px; border: none; border-radius: 10px; background-color: rgb(95, 95, 95); font-size: 12px; color: white; text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;">Economics</option>
+                <option value="Business" style="display: block; width: 100%; margin-top: 5px; padding: 12px; border: none; border-radius: 10px; background-color: rgb(88, 84, 77); font-size: 12px; color: white; text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;">Business</option>
+                <option value="Physics" style="display: block; width: 100%; margin-top: 5px; padding: 12px; border: none; border-radius: 10px; background-color: rgb(168, 168, 168); font-size: 12px; color: white; text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;">Physics</option>
+            
+            </select>
+
+            <br><br><br><br><br><br><br>
+
+            <input type="Register" name="send" value="Register" style="display: block; width: 96%; margin-top: 5px; padding: 5px; border: none; border-radius: 10px; background-color: rgb(0, 89, 255); font-size: 12px; color: white; text-align: center; cursor: pointer; box-shadow: 0 5px 15px white; transition: all 0.3s ease;">
+         
+            </div>
+    
+    <!--  Course Catalog -->
+    <div class="gif" style="display: flex; flex-direction: column; font-size: 1.2rem; color: white; height: 500px; margin-top: 35px; margin-left: 70px; box-shadow: 0 0 40px white;">
+    <h1 style="color: rgb(255, 255, 255);">2026 Zicklin School of Business</h1><H2 style="color: rgb(89, 255, 255); font-size: 30px;">Course Catalog</H2>
+    <img style="width: 150px; height: 150px;" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV1dTcyMmxubXBzaGljOWNtNmF0djlwaXV2azVuYm0yMTVoc2liaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1CX3Z9GrqrquJbIX0c/giphy.gif">
+    </div>
+
+    <!-- Course Table -->
+    <table class="content-table" style="width: 450px; height:200px; margin-top: 150px; margin-left: 55px; border-spacing: 2px;">
+        <thead class="table-heading" style="padding: 2px 2px;">
+            <tr style="text-align: center; background-color: white; opacity: 45%; font-size: 16px; color: rgb(41, 41, 41);">
+                <th>Class</th>
+                <th>Credits</th>
+                <th>Open Seats</th>
+                <th>Tuition Costs</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+
+        <tbody style="border-bottom: 2px solid grey;">
+            <tr style="text-align: center; font-size: 15px; border-bottom: 2px dashed grey;">
+            <td style="color: rgb(98, 0, 255);">Calculus</td>
+            <td style="color: rgb(2, 154, 255);">6 Credits</td>
+            <td style="color: rgb(2, 6, 255);">17 Open</td>
+            <td style="color: rgb(0, 100, 70);">$ 3,400 </td>
+            <td style="color: rgb(241, 47, 47);">August 15</td>
+            </tr>
+
+            <tr style="text-align: center; font-size: 15px; border-bottom: 2px dashed grey;">
+            <td style="color: rgb(98, 0, 255);">Economics</td>
+            <td style="color: rgb(2, 154, 255);">5 Credits</td>
+            <td style="color: rgb(2, 6, 255);">21 Open</td>
+            <td style="color: rgb(0, 100, 70);">$ 3,100 </td>
+            <td style="color: rgb(241, 47, 47);">July 30</td>
+            </tr>
+
+            <tr style="text-align: center; font-size: 15px; border-bottom: 2px dashed grey;">
+            <td style="color: rgb(98, 0, 255);">Business</td>
+            <td style="color: rgb(2, 154, 255);">7 Credits</td>
+            <td style="color: rgb(2, 6, 255);">32 Open</td>
+            <td style="color: rgb(0, 100, 70);">$ 4,800</td>
+            <td style="color: rgb(241, 47, 47);"> August 1</td>
+            </tr>
+
+            <tr style="text-align: center; font-size: 15px; border-bottom: 5px dashed rgb(209, 209, 209);">
+            <td style="color: rgb(98, 0, 255);">Physics</td>
+            <td style="color: rgb(2, 154, 255);">5 Credits</td>
+            <td style="color: rgb(2, 6, 255);">9 Open</td>
+            <td style="color: rgb(0, 100, 70);">$ 3,100 </td>
+            <td style="color: rgb(241, 47, 47);">July 18</td>
+            </tr>
+
+        </tbody>
+    </table>
+    </div>
+    </div>
+</body>
+
+</html>

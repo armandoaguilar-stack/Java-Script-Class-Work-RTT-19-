@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Internal  Style-->
+
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .myVideo {
+        position: fixed;
+        object-fit: cover;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1;
+        }
+
+         img {
+            display: flex;
+            height: 50px;
+            width: auto;
+            position: absolute;
+            right: 50%;
+            bottom: 0;
+            opacity: 70%;
+        }
+
+         h1 {
+            color: white;
+            display: inline-block;
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+
+         .container { 
+            display: inline-block;
+            width: auto;
+            height: auto;
+            padding: 10px;
+            border-radius: 50px;
+            margin-left: 100px;
+            margin-top: 100px;
+            background-color: rgb(0, 0, 0);
+            opacity: 45%;
+            animation: slideIn 7s ease-in;
+         }
+
+         @keyframes slideIn {
+            5% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+         }
+
+         .first {
+            font-size: 18px;
+            color: aqua;
+            text-align: center;
+         }
+
+         .second {
+            font-size: 12px;
+            color: rgb(136, 136, 136);
+            text-align: center;
+            margin-bottom: 10px;
+         }
+
+         .third {
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+         }
+
+         .students {
+            font-size: 12px;
+            color: rgb(205, 86, 252);
+         }
+
+         .ribbon {
+            display: inline-block;
+            
+            height: 130px;
+            width: 100px;
+            justify-content: center;
+         } 
+
+    
+    </style>
+</head>
+<body>
+    
+     <!-- Video -->
+    <video class="myVideo" src="./baruch.mp4" autoplay muted loop></video>
+
+    <img class="pika" src="./pokemon.png">
+
+    <div class="container">
+
+    <h1 class="message">
+        <p class="first">The Zicklin School of Business is the business school of Baruch College.</p>
+        <p class="second">It was established in 1919 and is named after financier and alumnus Lawrence Zicklin.</p>
+        <p class="third">Zicklin is the largest business school in the United States, with more than <strong class="students"> 10,000 </strong> students enrolled in its programs. </p>
+    </h1>
+    </div>
+
+    <img class="ribbon" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTluZzk1bGsxbmZmNGRqcnR1dXZ5NjU2ajVid204eHhrdWQ1bmFiNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/D2WGQ0gdmrL90d8KzC/giphy.gif">
+
+    
+</body>
+</html>
